@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/home_nav_graph"
+    app:startDestination="@id/aiChatFragment">
+
+    <fragment
+        android:id="@+id/aiChatFragment"
+        android:name="dev.tnavarro.app.ui.AiChatFragment"
+        android:label="fragment_ai_chat"
+        tools:layout="@layout/fragment_ai_chat" />
+
+    <fragment
+        android:id="@+id/aiHistoryFragment"
+        android:name="dev.tnavarro.app.ui.AiHistoryFragment"
+        android:label="fragment_ai_history"
+        tools:layout="@layout/fragment_ai_history" />
+
+</navigation>

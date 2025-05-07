@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:padding="@dimen/md_16dp"
+    android:gravity="center"
+    tools:context=".ui.WelcomeFragment">
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:layout_width="256dp"
+        android:layout_height="256dp"
+        app:lottie_autoPlay="true"
+        app:lottie_colorFilter="@color/brand"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/anim_bubble_ia"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/TextMedium"
+        android:text="@string/o_seu_assistente_de_estudos_em_programacao"
+        android:textColor="@color/text_span"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/md_16dp"
+        style="@style/Heading"
+        android:text="@string/seja_bem_vindo_a_rocketia"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/xmd_24dp"
+        style="@style/TextLarge"
+        android:textColor="@color/text_body"
+        android:text="@string/escolha_uma_area_de_estudos"
+        />
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnWelcomeStart"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/xlg_54dp"
+        style="@style/PrimaryButton"
+        android:text="@string/iniciar"
+        android:layout_marginTop="@dimen/lg_36dp"
+        />
+
+</LinearLayout>
