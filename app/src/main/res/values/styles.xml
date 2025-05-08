@@ -41,4 +41,10 @@
         <item name="android:textColor">@color/white</item>
         <item name="android:checkable">true</item>
     </style>
+
+    <style name="AnimatedProgressBar" parent="Widget.AppCompat.ProgressBar.Horizontal">
+        <item name="android:progressDrawable">@drawable/progress_animate</item>
+        <item name="android:indeterminateOnly">false</item>
+    </style>
+
 </resources>

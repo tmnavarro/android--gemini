@@ -1,0 +1,33 @@
+<animated-vector
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt">
+    <aapt:attr name="android:drawable">
+        <vector
+            android:name="vector"
+            android:width="24dp"
+            android:height="24dp"
+            android:viewportWidth="24"
+            android:viewportHeight="24">
+            <group android:name="container">
+                <path
+                    android:name="circle"
+                    android:pathData="M 12 1 C 9.084 1 6.284 2.16 4.222 4.222 C 2.16 6.284 1 9.084 1 12 C 1 14.916 2.16 17.716 4.222 19.778 C 6.284 21.84 9.084 23 12 23 C 14.916 23 17.716 21.84 19.778 19.778 C 21.84 17.716 23 14.916 23 12 C 23 9.084 21.84 6.284 19.778 4.222 C 17.716 2.16 14.916 1 12 1 Z"
+                    android:fillColor="#ffffff"
+                    android:strokeColor="#000000"
+                    android:strokeWidth="2"
+                    android:trimPathStart="1"/>
+            </group>
+        </vector>
+    </aapt:attr>
+    <target android:name="circle">
+        <aapt:attr name="android:animation">
+            <objectAnimator
+                android:propertyName="trimPathStart"
+                android:duration="1000"
+                android:valueFrom="1"
+                android:valueTo="0"
+                android:valueType="floatType"
+                android:interpolator="@android:anim/linear_interpolator"/>
+        </aapt:attr>
+    </target>
+</animated-vector>
